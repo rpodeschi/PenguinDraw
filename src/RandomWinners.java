@@ -10,7 +10,8 @@
  *
  */
 
-// Values used for 2014. Prizes 49, start 7925, end 8905
+// Values used for 2014: Prizes 49, start 7925, end 8905
+// Values used for 2016:
 
 import java.util.*;
 
