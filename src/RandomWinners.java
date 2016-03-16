@@ -1,7 +1,7 @@
 /**
  * Author:      RJ Podeschi
  * Date:        3-27-14
- * Class:     RandomWinners.java
+ * Class:       RandomWinners.java
  * 
  * Purpose:     To generate a set of randomly generated bib numbers to be used
  *              for prize drawings at Penguin in the Park.

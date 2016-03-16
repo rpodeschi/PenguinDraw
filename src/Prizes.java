@@ -79,7 +79,7 @@ public class Prizes {
         System.out.println("\nAre these values correct? Enter Y or N");
         String correctValues = keyboard.next();
         if (correctValues.equals("N")) {
-            System.out.println("Exiting Program. Please Re-Start.");
+            System.out.println("Exiting Program. Please Re-Start Process.");
             System.exit(0);
         }
 
