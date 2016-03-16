@@ -8,6 +8,7 @@
  *              groups of bib numbers.
  *
  * Audit Trail: 15-MAR-16, RJ: Remove old comments and clean up code.
+ *                             Include Day-of registrations in prize draw
  *
  */
 
@@ -38,7 +39,7 @@ public class Prizes {
 
 
         System.out.println("Enter how many prizes you will award to "
-                + "Day of Race resistrants:");
+                + "Day of Race registrants:");
         dayRegPrizes = keyboard.nextInt();
 
         if (preRegPrizes == 0) {
@@ -48,41 +49,32 @@ public class Prizes {
         else {
             System.out.println("Bib Numbers for Pre-Registrants:");
             System.out.println("--------------------------------");
-            System.out.println("Enter the first bib number for race "
-                    + "Pre-Registrants:");
+            System.out.println("Enter the first bib number for race Pre-Registrants:");
             preRegStartBib = keyboard.nextInt();
-            System.out.println("Enter the last bib number for race "
-                    + "Pre-Registrants:");
+            System.out.println("Enter the last bib number for race Pre-Registrants:");
             preRegEndBib = keyboard.nextInt();
+            System.out.println("--------------------------------");
+            System.out.println("Bib Numbers for Day-of Registrations");
+            System.out.println("--------------------------------");
+            System.out.println("Enter the first bib number for Day-of Registrations");
+            dayRegStartBib = keyboard.nextInt();
+            System.out.println("Enter the lasb bib number for Day-of Registrations");
+            dayRegEndBib = keyboard.nextInt();
         }
-
-//        if (dayRegPrizes == 0) {
-//            System.out.println("No Prizes will be awarded to "
-//                    + "race Pre-Registrants.");
-//        }
-//        else {
-//        System.out.println("Bib Numbers for Pre-Registrants:");
-//        System.out.println("--------------------------------");
-//        System.out.println("Enter the first bib number for race "
-//                + "Pre-Registrants:");
-//        dayRegStartBib = keyboard.nextInt();
-//        System.out.println("Enter the last bib number for race " 
-//                + "Pre-Registrants:");
-//        dayRegEndBib = keyboard.nextInt();
 
         System.out.println("\nPlease confirm your settings:");
         System.out.println("Total Prizes for Pre-Registrants: "
                 + preRegPrizes);
-//        System.out.println("Total Prizes for Day of Registrants: "
-//                + dayRegPrizes);
+        System.out.println("Total Prizes for Day of Registrants: "
+                + dayRegPrizes);
         System.out.println("Total Prizes to be awarded: "
-                + (/*preRegPrizes + */dayRegPrizes));
+                + (preRegPrizes + dayRegPrizes));
         System.out.println("Bib Number Ranges for Pre-Registrants");
         System.out.println("Starting Bib Number: " + preRegStartBib);
         System.out.println("Ending Bib Number: " + preRegEndBib);
-//        System.out.println("Bib Number Ranges for Day of Registrants");
-//        System.out.println("Starting Bib Number: " + dayRegStartBib);
-//        System.out.println("Ending Bib Number: " + dayRegEndBib);
+        System.out.println("Bib Number Ranges for Day of Registrants");
+        System.out.println("Starting Bib Number: " + dayRegStartBib);
+        System.out.println("Ending Bib Number: " + dayRegEndBib);
 
         System.out.println("\nAre these values correct? Enter Y or N");
         String correctValues = keyboard.next();

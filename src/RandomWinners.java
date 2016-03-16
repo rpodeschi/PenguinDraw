@@ -7,6 +7,7 @@
  *              for prize drawings at Penguin in the Park.
  *
  * Audit Trail: 15-MAR-16, RJ: Remove comments and clean up code.
+ *                             Add additional array.sort before printing.
  *
  */
 
@@ -49,6 +50,8 @@ public class RandomWinners
                         (endBibNo - startBibNo)) + (startBibNo - 1);
             }
         }
+
+        Arrays.sort(firstArray);
 
         for (int k = 1; k < firstArray.length; k++) {
             System.out.println(firstArray[k]);
