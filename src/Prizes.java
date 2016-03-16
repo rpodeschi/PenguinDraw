@@ -1,7 +1,13 @@
 /**
- *  Class handles all prize logic including number of prizes,
- *  awarding of prizes, and separating prizes out for different
- *  groups of bib numbers.
+ * Author:      RJ Podeschi
+ * Date:        3-27-14
+ * Class:       Prizes.java
+ *
+ * Purpose:     Class handles all prize logic including number of prizes,
+ *              awarding of prizes, and separating prizes out for different
+ *              groups of bib numbers.
+ *
+ * Audit Trail: 15-MAR-16, RJ: Remove old comments and clean up code.
  *
  */
 
@@ -16,12 +22,12 @@ public class Prizes {
     private int dayRegStartBib;
     private int dayRegEndBib;
 
-
     /**
      * Collects number of prizes for both pre-registrants and day of
      * registrants. Also collects starting and ending bib numbers for both
      * sets.
      */
+
     public void inputPrizeValues() {
 
         Scanner keyboard = new Scanner(System.in);

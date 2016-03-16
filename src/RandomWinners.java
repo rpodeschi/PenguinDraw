@@ -1,12 +1,16 @@
-/*
+/**
  * Author:      RJ Podeschi
  * Date:        3-27-14
- * Program:     RandomWinners.java
+ * Class:     RandomWinners.java
  * 
- * Purpose:     To generate a set of randcom bib numbers to be used
- *              for prizes at Penguin in the Park. 
+ * Purpose:     To generate a set of randomly generated bib numbers to be used
+ *              for prize drawings at Penguin in the Park.
+ *
+ * Audit Trail: 15-MAR-16, RJ: Remove comments and clean up code.
+ *
  */
-// Values for 2014. Prizes 49, start 7925, end 8905
+
+// Values used for 2014. Prizes 49, start 7925, end 8905
 
 import java.util.*;
 
@@ -25,10 +29,7 @@ public class RandomWinners
 
         System.out.println("Prize Table\nWinning Numbers");
         System.out.println("----------------------------");
-//        System.out.println("Total Prizes: " + totalPrizes);
-//        System.out.println("Random Numbers between Bib No."
-//                + startBibNo + " and " + endBibNo);
-//        System.out.println("----------------------------");
+
         int[] firstArray;
         int totalPrizes = award.getTotalPrizes();
         int startBibNo = award.getStartBibNum();
