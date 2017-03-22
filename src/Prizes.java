@@ -37,7 +37,6 @@ public class Prizes {
                 + "pre-registrants:");
         preRegPrizes = keyboard.nextInt();
 
-
         System.out.println("Enter how many prizes you will award to "
                 + "Day of Race registrants:");
         dayRegPrizes = keyboard.nextInt();
@@ -82,7 +81,6 @@ public class Prizes {
             System.out.println("Exiting Program. Please Re-Start Process.");
             System.exit(0);
         }
-
     }
 
     public int getTotalPrizes() {
@@ -96,5 +94,4 @@ public class Prizes {
     public int getEndBibNum() {
         return preRegEndBib;
     }
-
 }

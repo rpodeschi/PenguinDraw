@@ -18,7 +18,6 @@ import java.util.*;
 
 public class RandomWinners
 {
-
     public static void main(String[] args) {
 
         ProgramInfo header = new ProgramInfo();
@@ -57,5 +56,4 @@ public class RandomWinners
             System.out.println(firstArray[k]);
         }
     }
-
 }
