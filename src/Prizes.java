@@ -9,6 +9,8 @@
  *
  * Audit Trail: 15-MAR-16, RJ: Remove old comments and clean up code.
  *                             Include Day-of registrations in prize draw
+ *              27-OCT-17, RJ: Add helper methods to return day of registration
+ *                              bib numbers and total prizes.
  *
  */
 
@@ -83,15 +85,27 @@ public class Prizes {
         }
     }
 
-    public int getTotalPrizes() {
+    public int getPreRegPrizes() {
         return preRegPrizes;
     }
+    
+    public int getDayRegPrizes() {
+        return dayRegPrizes;
+    }
 
-    public int getStartBibNum() {
+    public int getPreRegStartBibNum() {
         return preRegStartBib;
     }
 
-    public int getEndBibNum() {
+    public int getPreRegEndBibNum() {
         return preRegEndBib;
+    }
+    
+    public int getDayRegStartBibNum() {
+        return dayRegStartBib;
+    }
+    
+    public int getDayRegEndBibNum() {
+        return dayRegEndBib;
     }
 }
