@@ -5,17 +5,17 @@
  * Date:        4/9/14
  *
  * Audit Trail: 15-MAR-16, RJ: Code clean up.
+ *              27-OCT-17, RJ: Update version information.
  */
 public class ProgramInfo {
 
     private final static String PROG_NAME = "Penguin Draw";
     private final static String AUTHOR = "RJ Podeschi";
-    private final static String VERSION = "1.1.2";
-    private final static String LAST_MOD_DATE = "15-MAR-2016";
+    private final static String VERSION = "1.2.1";
+    private final static String LAST_MOD_DATE = "27-OCT-2017";
 
     /**
      * printHeader displays general program information.
-
      */
     public void printHeader() {
         System.out.println(PROG_NAME);
