@@ -33,10 +33,6 @@
  *
 **/
 
-import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
-import javax.swing.JFrame;
-
 public class ProgramInfo {
 
     private final static String PROG_NAME = "Penguin Draw";
@@ -48,18 +44,11 @@ public class ProgramInfo {
      * splashDialog displays general program information.
      */
     public void splashDialog() {
+        
+        System.out.println("Program: " + PROG_NAME);
+        System.out.println("Author: " + AUTHOR);
+        System.out.println("Version: " + VERSION);
+        System.out.println("Last Release Date: " + LAST_MOD_DATE);
 
-        JFrame frame = new JFrame("JOptionPane Program Splash Screen");
-        ImageIcon icon = new ImageIcon(getClass().getClassLoader().getResource("img\\penguin32_29.png"));
-
-        JOptionPane.showMessageDialog(frame,
-                PROG_NAME + "\n" +
-                "Version: " + VERSION + "\n" +
-                "Release Date: " + LAST_MOD_DATE + "\n" +
-                "Author: " + AUTHOR + "\n" +
-                "License Information: ",
-                PROG_NAME,
-                JOptionPane.INFORMATION_MESSAGE,
-                icon);
     }
 }
