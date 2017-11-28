@@ -72,7 +72,7 @@ public class Prizes {
                     + "race Pre-Registrants.");
         }
         else {
-            System.out.println("Bib Numbers for Pre-Registrants:");
+            System.out.println("All of the Bib Numbers for Pre-Registrants:");
             System.out.println("--------------------------------");
             System.out.println("Enter the first bib number for race Pre-Registrants:");
             preRegStartBib = keyboard.nextInt();
